@@ -220,11 +220,11 @@
   // }while(password !== "12346")
   //   console.log("welcom user")
 
-let Number
-do{
-Number = prompt("Enter Number Greather Then 10")
-}while(isNaN(Number) || Number <= 10)
-console.log("Hey Welcom!")
+// let Number
+// do{
+// Number = prompt("Enter Number Greather Then 10")
+// }while(isNaN(Number) || Number <= 10)
+// console.log("Hey Welcom!")
 
 // let greaterThan;
 // do {
@@ -233,3 +233,37 @@ console.log("Hey Welcom!")
 // } while (isNaN(greaterThan) || greaterThan <= 10);
 
 // console.log("Welcome!"); 
+
+
+
+// for...fo loop //
+
+// for(variable of itartion);
+
+
+
+// const cars=["farreri","hammer","BMW","Range Rover",]
+// for(let car of cars){
+// console.log(car)
+// }
+
+// const language="javascript";
+// for(let l of language){
+// console.log(l)
+// }
+
+      // if (condition){//code to be executed//}
+
+      let age = 12;
+
+      if (age < 13){
+        console.log("you are an chile")
+      }
+       else if (age < 20) {
+        console.log("you are an teenager");
+
+      } 
+      else{
+        console.log("you are  an adelt")
+      }
+
