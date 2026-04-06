@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 30</title>
+</head>
+<body>
+    <script>
+        function oprate(a,b, callback){
+              return callback(a,b)
+        }
+        function multipy(a,b){
+            return a*b
+        }
+        function divide(a,b){
+            return a/b
+        }
+        console.log(oprate(5,3, multipy))
+        console.log(oprate(20,2,divide))
+    </script>
+</body>
+</html>

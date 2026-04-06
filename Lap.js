@@ -387,27 +387,27 @@
 
 
   //asnchrocous promsis//
-//  function fetchUserData(){
-//    return new Promise((resolve,reject)=>{
-//       setTimeout(()=>{
-//          const sett=true
-//          if(sett){
-//             resolve({id:20,name:"abdiraxman",age:21})
+ function fetchUserData(){
+   return new Promise((resolve,reject)=>{
+      setTimeout(()=>{
+         const sett=false
+         if(sett){
+            resolve({id:20,name:"abdiraxman",age:21})
             
-//          }else{
-//             reject("missed out")
-//          }
-//       })
-//    })
-//  }
+         }else{
+            reject("missed out")
+         }
+      })
+   })
+ }
 
-//  async function DesplayedMe(){
-//        try{
-//                const user = await fetchUserData()
-//                console.log(user)
-//        }catch(err){console.log(err)}
-//  }
-//  DesplayedMe()
+ async function DesplayedMe(){
+       try{
+               const user = await fetchUserData()
+               console.log(user)
+       }catch(err){console.log(err)}
+ }
+ DesplayedMe()
 
 
 
@@ -523,106 +523,106 @@
 // })
 
 
-const Form = document.querySelector('#myForm')
-const Error = document.querySelector('#Error')
-const success=document.querySelector('#success')
-const Name =document.querySelector('#Name')
-const Email = document.querySelector('#Email')
-const password = document.querySelector('#password')
-const confimePassword = document.querySelector('#ConfirmPassword')
+// const Form = document.querySelector('#myForm')
+// const Error = document.querySelector('#Error')
+// const success=document.querySelector('#success')
+// const Name =document.querySelector('#Name')
+// const Email = document.querySelector('#Email')
+// const password = document.querySelector('#password')
+// const confimePassword = document.querySelector('#ConfirmPassword')
 
 
-// Name.addEventListener('input', ValidateName);
+// // Name.addEventListener('input', ValidateName);
 
 
-Form.addEventListener('submit',function(event){
-    event.preventDefault();
+// Form.addEventListener('submit',function(event){
+//     event.preventDefault();
 
-   // Error.textContent='';
-   // success.textContent='';
+//    // Error.textContent='';
+//    // success.textContent='';
 
-Error.textContent = '';
-success.textContent = '';
+// Error.textContent = '';
+// success.textContent = '';
 
-    const isNamevalide=ValidateName();
-    const isEmailvalide= validateEmail();
-    const ispasswordvalide=validatepassword();
-    const isconfirmPasswordvalide=validateConfirmPassword();
+//     const isNamevalide=ValidateName();
+//     const isEmailvalide= validateEmail();
+//     const ispasswordvalide=validatepassword();
+//     const isconfirmPasswordvalide=validateConfirmPassword();
  
-   if(!isNamevalide){
-      Name.focus()
-      return;
-   } else if(!isEmailvalide){
-      Email.focus()
-      return;
-   }else if(!ispasswordvalide){
-     password.focus()
-     return
-   }else if(!isconfirmPasswordvalide){
-   ConfirmPassword .focus()
-   return
-   }
+//    if(!isNamevalide){
+//       Name.focus()
+//       return;
+//    } else if(!isEmailvalide){
+//       Email.focus()
+//       return;
+//    }else if(!ispasswordvalide){
+//      password.focus()
+//      return
+//    }else if(!isconfirmPasswordvalide){
+//    ConfirmPassword .focus()
+//    return
+//    }
    
 
 
 
-    success.textContent=`Regestrion is seccessfully`
-})
+//     success.textContent=`Regestrion is seccessfully`
+// })
 
-function ValidateName(){
-    if(Name.value.trim( ) === ''){
-        setError(Name, 'username is not reqiured')
-        return false
-    }else{
-        setSuccess(Name)
-        return true
-    }
-}
-function validateEmail(element,message){
-      const emailPattener= 
-      if(!Email.value.match(emailPattener)){
-            setError(Email,'please enter a valid email adderess')
-            return false
-      }else{
-         setSuccess(Email)
-         return true
-      }
-}
-function validatepassword(element,message){
-         if(password.value.length < 8){
-               setError( password,'Your password atleast 8 chargter')
-               return false
-         }else{
-               setSuccess(password)
-               return true
-         }
-}
+// function ValidateName(){
+//     if(Name.value.trim( ) === ''){
+//         setError(Name, 'username is not reqiured')
+//         return false
+//     }else{
+//         setSuccess(Name)
+//         return true
+//     }
+// }
+// function validateEmail(element,message){
+//       const emailPattener= 
+//       if(!Email.value.match(emailPattener)){
+//             setError(Email,'please enter a valid email adderess')
+//             return false
+//       }else{
+//          setSuccess(Email)
+//          return true
+//       }
+// }
+// function validatepassword(element,message){
+//          if(password.value.length < 8){
+//                setError( password,'Your password atleast 8 chargter')
+//                return false
+//          }else{
+//                setSuccess(password)
+//                return true
+//          }
+// }
 
-function validateConfirmPassword(element,message){
-       if( ConfirmPassword.value.trim() !== password.value ){
-               setError(ConfirmPassword,'password is not matched')
-               return false
-       }else{
-            setSuccess(ConfirmPassword)
-            return true
-       }
-}
-
-
+// function validateConfirmPassword(element,message){
+//        if( ConfirmPassword.value.trim() !== password.value ){
+//                setError(ConfirmPassword,'password is not matched')
+//                return false
+//        }else{
+//             setSuccess(ConfirmPassword)
+//             return true
+//        }
+// }
 
 
-function setError(element, message) {
-    element.classList.add('invalid');
-    element.classList.remove('valid');
-    Error.textContent = message;
+
+
+// function setError(element, message) {
+//     element.classList.add('invalid');
+//     element.classList.remove('valid');
+//     Error.textContent = message;
     
-}
+// }
 
-function setSuccess(element){
-   //   if (!element) return;
-element.classList.add('valid')
- element.classList.remove('invalid')
-}
+// function setSuccess(element){
+//    //   if (!element) return;
+// element.classList.add('valid')
+//  element.classList.remove('invalid')
+// }
 
 
 
