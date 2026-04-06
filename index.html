@@ -1,13 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>programmin lang</title>
-</head>
-<body>
-    <script src="Lap.js">
+  </head>
+  <style>
+    .valid{
+        border: 2px solid #008000;
+    }
+    .invalid{
+        border: 2px solid #ff0000;
+         /* border: 2px solid #008000; */
         
-    </script>
-</body>
+    }
+    input{
+      outline: none;
+    }
+</style>
+  <body>
+    <form id="myForm">
+
+      <label for="Name">Name:</label><br />
+      <input type="text" id="Name" /><br />
+
+      <label for="Email">Email:</label><br />
+      <input type="Email" id="Email" /><br />
+
+      <label for="password">password:</label><br />
+      <input type="password" id="password" /><br />
+
+      <label for="Confirm password ">Confirm password:</label><br />
+      <input type="password" id="ConfirmPassword" /><br />
+
+      <button type="submit" id="myMassege">Registration</button>
+      
+    </form>
+
+    <p id="Error" style="color:red"></p>
+    <p id="success" style="color:green"></p>
+
+    <script src="Lap.js"></script>
+  </body>
 </html>
