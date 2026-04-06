@@ -7,13 +7,19 @@
 </head>
 <body>
     <script >
-        function Onetime(){
+        function Onetime(callback){
             alert("click ok before the Enter")
-            return{}
+            setTimeout(()=>{
+                      const User={id:10,name:"apdi-jamal",}
+                      callback(User)
+            },3000)
+          
         }
-        console.log("welcom")
-         const user=Onetime()
-        console.log(user)
+        
+         Onetime(function (User){
+            console.log(User)
+         })
+        
     </script>
 </body>
 </html>
