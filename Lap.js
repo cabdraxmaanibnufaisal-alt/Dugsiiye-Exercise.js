@@ -387,27 +387,27 @@
 
 
   //asnchrocous promsis//
- function fetchUserData(){
-   return new Promise((resolve,reject)=>{
-      setTimeout(()=>{
-         const sett=false
-         if(sett){
-            resolve({id:20,name:"abdiraxman",age:21})
+//  function fetchUserData(){
+//    return new Promise((resolve,reject)=>{
+//       setTimeout(()=>{
+//          const sett=false
+//          if(sett){
+//             resolve({id:20,name:"abdiraxman",age:21})
             
-         }else{
-            reject("missed out")
-         }
-      })
-   })
- }
+//          }else{
+//             reject("missed out")
+//          }
+//       })
+//    })
+//  }
 
- async function DesplayedMe(){
-       try{
-               const user = await fetchUserData()
-               console.log(user)
-       }catch(err){console.log(err)}
- }
- DesplayedMe()
+//  async function DesplayedMe(){
+//        try{
+//                const user = await fetchUserData()
+//                console.log(user)
+//        }catch(err){console.log(err)}
+//  }
+//  DesplayedMe()
 
 
 
@@ -579,7 +579,7 @@
 //     }
 // }
 // function validateEmail(element,message){
-//       const emailPattener= 
+//       const emailPattener=  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 //       if(!Email.value.match(emailPattener)){
 //             setError(Email,'please enter a valid email adderess')
 //             return false
@@ -624,6 +624,23 @@
 //  element.classList.remove('invalid')
 // }
 
+
+     // menu navbar//
+     const togglebutton=document.querySelector('.toggle-button')
+     const navbar = document.querySelector('.navbar')
+     
+     togglebutton.addEventListener('click' ,function(){
+      navbar.classList.toggle('active')
+   
+     })
+
+ 
+   
+      
+
+
+
+     
 
 
     
