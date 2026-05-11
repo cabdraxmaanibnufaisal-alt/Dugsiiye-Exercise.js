@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // GET API USERS//
+        async function Getpost() {
+          
+
+            try{
+                  const reponse =await fetch('https://jsonplaceholder.typicode.com/users')
+            console.log(reponse)
+
+            if(!reponse.ok){
+                    throw new Error(`HTTP:Fetch Resqust Faild Status${reponse.status}`);
+                    
+            }
+            }catch(error){
+                console.log(error)
+            }
+            
+        }
+        Getpost()
+    </script>
+</body>
+</html>
