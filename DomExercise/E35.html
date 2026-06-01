@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img id="image" src="https://images.unsplash.com/photo-1773332585815-f106a5d6ed6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" alt="">
+    
+
+    <button onclick="change()">Edit Profile</button>
+    <script>
+
+         function change(){
+            const image = document.querySelector('#image')
+            
+            const newUrl = prompt('Enter the image')
+            const border = prompt('Enter you color border')
+            const width = prompt('Enter you  width')
+            const height= prompt('Enter you  height')
+
+
+
+
+            image.setAttribute('src', newUrl )
+            image.style.border=`2px solid ${border}`
+            image.style.width=`${width}px`
+            image.style.height=`${height}px`
+        
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="headerOne">hello wolrd welcome </h1>
+    <h2 id="headertwo">this is javaScript</h2>
+    <button onclick="ChangeText()">Change Text</button>
+    <button onclick="changeHtml()">change Html</button>
+
+
+    <script >
+      
+
+        function ChangeText(){
+            const ChangeText =document.querySelector('#headerOne')
+            const changeHtml =document.querySelector('#headertwo')
+
+headerOne.textContent=`hello wolrd welcome <strong>updated</strong>.`
+                console.log(ChangeText)
+        }
+
+        function changeHtml(){
+            const ChangeText =document.querySelector('#headerOne')
+            const changeHtml =document.querySelector('#headertwo')
+
+                headertwo.innerHTML =` hi how are you`
+                console.log(changeHtml)
+        }
+    </script>
+</body>
+</html>
