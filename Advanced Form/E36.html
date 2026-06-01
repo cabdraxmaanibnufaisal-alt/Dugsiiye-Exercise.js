@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 900;
+        
+    }
+    #ChooseColor{
+        font-size: 20px;
+        font-weight: 600;
+        
+    }
+    #ColorPreview{
+        border: 2px solid black;
+        width: 250px;
+        height: 200px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+</style>
+<body>
+
+    <h1 >Interactive Color Picker</h1>
+    <label for="ChooseColor">Choose a Color:</label>
+    <input type="color" id="ChooseColor">
+
+    <div id="ColorPreview">Color Preview</div>
+
+    <h2>Color history</h2>
+    <ul id="Colorhistory">Color history</ul>
+
+    <button id="Clearhistory">Clear history</button>
+
+    <script src="E.36.js">
+     
+    </script>
+</body>
+</html>
