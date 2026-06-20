@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language Translator</title>
-    <style>
+    <title>Document</title>
+    
+</head>
+ <style>
         *{
             box-sizing: border-box;
             padding: 0;
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-           
-        }
-        body{
-             background: linear-gradient(135deg, #FF8008, #FF0080);
         }
         .container{
             max-width: 400px;
@@ -22,7 +20,7 @@
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 10px;
-           background: linear-gradient(135deg, #141E30, #6A11CB);
+            background-color: #856262;
         }
         h1{
             text-align: center;
@@ -65,9 +63,6 @@
             color: #000;
         }
     </style>
-
-    
-</head>
 <body>
     <div class="container">
         <h1>Language Translator</h1>
@@ -87,7 +82,7 @@
             <option value="pt">Portuguese</option>
             <option value="it">Italian</option>
         </select>
-        <label for="text">To:</label>
+         <label for="text">To:</label>
         <select id="to-language">
             <option value="">--Select a language--</option>
             <option value="so">Somali</option>
@@ -103,12 +98,14 @@
             <option value="pt">Portuguese</option>
             <option value="it">Italian</option>
         </select>
-        <label for="text">Text to translate:</label>
+         <label for="text">Text to translate:</label>
         <textarea id="text" rows="4" cols="50"></textarea>
         <button id="translate-btn">Translate</button>
         <h2>Translated Text:</h2>
         <p id="translatedText"></p>
+
     </div>
-    <script src="dugsiiyeTranslation app.js"></script>
+
+    <script src="E39.js"></script>
 </body>
-</html> 
+</html>
